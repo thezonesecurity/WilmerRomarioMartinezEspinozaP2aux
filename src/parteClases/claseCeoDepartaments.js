@@ -15,17 +15,17 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 exports.__esModule = true;
-var claseDepartaments_1 = require("./claseDepartaments");
+var claseDepartaments_1 = require("../parteClases/claseDepartaments");
 var CEOdepartament = /** @class */ (function (_super) {
     __extends(CEOdepartament, _super);
-    function CEOdepartament(ad, i, o) {
-        var _this = _super.call(this, i, o) || this;
+    function CEOdepartament(ad, id, owner) {
+        var _this = _super.call(this, id, owner) || this;
         _this.admins = ad;
         return _this;
     }
     return CEOdepartament;
 }(claseDepartaments_1["default"]));
-var ceodepartament = new CEOdepartament("author", 1, "jaun");
-var ceodepartament1 = new CEOdepartament("author", 2, "diana");
-var ceodepartament2 = new CEOdepartament("author", 3, "lucas");
+var ceodepartament = new CEOdepartament("author", 1, "juan perez");
+var ceodepartament1 = new CEOdepartament("author", 2, "diana quinteros");
+var ceodepartament2 = new CEOdepartament("author", 3, "lucas bonifacio");
 console.log(ceodepartament.admins);

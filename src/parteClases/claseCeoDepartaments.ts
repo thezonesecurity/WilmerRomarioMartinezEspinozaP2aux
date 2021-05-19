@@ -1,8 +1,8 @@
 import Departament from "../parteClases/claseDepartaments";
 class CEOdepartament extends Departament {
     admins: string;
-    constructor(ad: string, i: number, o:string) {
-        super(i, o);
+    constructor(ad: string, id: number, owner:string) {
+        super(id, owner);
         this.admins = ad;
     }
 }

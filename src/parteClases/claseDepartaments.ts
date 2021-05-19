@@ -1,14 +1,14 @@
-class Departament {
+export class Departament {
     id: number;
-    private owner: string;
+     owner: string;
     workers: Array<string | number>;
     constructor(i: number, o:string) {
         this.id = i;
         this.owner = o;
         this.workers = [this.id, this.owner]
     }
-    createWorkers() {//agrega un empleado al depto
-
+    createWorkers(x: string) {//agrega un empleado al depto
+        this.owner = x;
     }
     showEmployeesInfo() {//muestra info de empelados(nombres, cantidad)
         console.log("id: "+departament.id+", trabajador: "+departament.owner);

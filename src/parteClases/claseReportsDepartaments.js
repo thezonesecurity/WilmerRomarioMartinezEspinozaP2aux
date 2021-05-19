@@ -19,14 +19,18 @@ exports.__esModule = true;
 var claseDepartaments_1 = require("../parteClases/claseDepartaments");
 var ReportsDepartaments = /** @class */ (function (_super) {
     __extends(ReportsDepartaments, _super);
-    function ReportsDepartaments(report, i, o) {
-        var _this = _super.call(this, i, o) || this;
+    function ReportsDepartaments(report, id, owner) {
+        var _this = _super.call(this, id, owner) || this;
         _this.reports = report;
         return _this;
     }
     ReportsDepartaments.prototype.addReports = function (nuevo) {
         console.log(this.reports = nuevo);
         return;
+    };
+    ReportsDepartaments.prototype.greet = function () {
+        var msm = "Hello " + this.owner + " there are " + this.reports.length + " reports";
+        return console.log(msm);
     };
     return ReportsDepartaments;
 }(claseDepartaments_1["default"]));
@@ -36,3 +40,4 @@ reportsDepartaments.addReports("reporte2");
 reportsDepartaments.addReports("reporte3");
 reportsDepartaments.addReports("reporte4");
 console.log(reportsDepartaments);
+reportsDepartaments.greet();
