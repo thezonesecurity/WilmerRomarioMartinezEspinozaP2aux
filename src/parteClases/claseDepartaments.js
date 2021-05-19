@@ -1,7 +1,9 @@
+"use strict";
+exports.__esModule = true;
 var Departament = /** @class */ (function () {
-    function Departament(i, ow) {
+    function Departament(i, o) {
         this.id = i;
-        this.owner = ow;
+        this.owner = o;
         this.workers = [this.id, this.owner];
     }
     Departament.prototype.createWorkers = function () {
@@ -11,6 +13,7 @@ var Departament = /** @class */ (function () {
         console.log("id: " + departament1.id + ", trabajador: " + departament1.owner);
         console.log("id: " + departament2.id + ", trabajador: " + departament2.owner);
         console.log("id: " + departament3.id + ", trabajador: " + departament3.owner);
+        return;
     };
     return Departament;
 }());
@@ -19,3 +22,4 @@ var departament1 = new Departament(2, "Diana quinteros");
 var departament2 = new Departament(3, "lucas bonifacio");
 var departament3 = new Departament(4, "flor quintana");
 console.log(departament.showEmployeesInfo());
+exports["default"] = Departament;
